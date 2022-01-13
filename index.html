@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,400&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
@@ -19,5 +19,61 @@
 			<h1>uTask <span>2.0</span></h1>
 			<img src="./assets/blue-gear.svg" alt="Engrenagem azul" />
 		</header>
+		<main>
+			<section class="input-area">
+				<input type="text" placeholder="Adicionar tarefa..." />
+				<a href="#">
+					<img
+						src="./assets/black-plus.svg"
+						alt="Botão de adicionar uma tarefa preto"
+					/>
+				</a>
+			</section>
+			<section class="todos">
+				<section class="tarefas todo">
+					<h2>To do</h2>
+					<div class="todo-item">
+						<p>Fazer almoço</p>
+						<div class="todo-icons">
+							<input
+								type="image"
+								src="./assets/right-arrow.svg"
+							/>
+							<input type="image" src="./assets/delete.svg" />
+						</div>
+					</div>
+					<div class="todo-item">
+						<p>Fazer almoço</p>
+						<div class="todo-icons">
+							<input
+								type="image"
+								src="./assets/right-arrow.svg"
+							/>
+							<input type="image" src="./assets/delete.svg" />
+						</div>
+					</div>
+				</section>
+				<section class="tarefas doing">
+					<h2>Doing</h2>
+					<div class="todo-item">
+						<p>Fazer almoço</p>
+						<div class="todo-icons">
+							<input type="image" src="./assets/check-mark.svg" />
+							<input type="image" src="./assets/delete.svg" />
+						</div>
+					</div>
+				</section>
+				<section class="tarefas done">
+					<h2>Done</h2>
+					<div class="todo-item">
+						<p>Fazer almoço</p>
+						<div class="todo-icons">
+							<input type="image" src="./assets/return.svg" />
+							<input type="image" src="./assets/delete.svg" />
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
 	</body>
 </html>
