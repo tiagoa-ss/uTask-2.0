@@ -17,24 +17,32 @@
 		<header>
 			<img src="./assets/blue-logo.svg" alt="Logo UnectJr azul" />
 			<h1>uTask <span>2.0</span></h1>
-			<img src="./assets/blue-gear.svg" alt="Engrenagem azul" />
+			<button id="engrenagem">
+				<img
+					src="./assets/blue-gear.svg"
+					alt="Engrenagem azul"
+				/>
+			</button>
 		</header>
 		<main>
-			<section class="input-area">
+			<form class="input-area">
 				<input type="text" placeholder="Adicionar tarefa..." />
-				<a href="#">
+				<button type="submit">
 					<img
 						src="./assets/black-plus.svg"
 						alt="Botão de adicionar uma tarefa preto"
 					/>
-				</a>
-			</section>
+				</button>
+			</form>
 			<section class="todos">
 				<section class="tarefas todo">
 					<h2>To do</h2>
 					<div class="todo-item">
 						<p>Fazer almoço</p>
 						<div class="todo-icons">
+							<!-- <button>
+								<img src="./assets/right-arrow.svg" alt="">
+							</button> -->
 							<input
 								type="image"
 								src="./assets/right-arrow.svg"
@@ -75,5 +83,30 @@
 				</section>
 			</section>
 		</main>
+		<div id="modal" class="modal-container">
+			<div class="modal">
+				<h2 id="modal-h2">Configuração</h2>
+				<div id="dark-mode">
+					<p>Dark Mode</p>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<div id="change-back">
+					<p>Plano de Fundo</p>
+					<form>
+						<input type="text" id="input-back">
+						<div class="buttons">
+							<button id="branco">Limpar</button>
+							<button type="submit" id="azul">Aplicar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="script.js"></script>
 	</body>
 </html>
