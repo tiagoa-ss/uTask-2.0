@@ -25,61 +25,44 @@
 			</button>
 		</header>
 		<main>
-			<form class="input-area">
-				<input type="text" placeholder="Adicionar tarefa..." />
-				<button type="submit">
-					<img
-						src="./assets/black-plus.svg"
-						alt="Botão de adicionar uma tarefa preto"
-					/>
-				</button>
-			</form>
+			<div class="input-area">
+				<form>
+					<input type="text" placeholder="Adicionar tarefa..."/>
+					<button type="submit" id="add-tarefa">
+						<img
+							src="./assets/black-plus.svg"
+							alt="Botão de adicionar uma tarefa preto"
+						/>
+					</button>
+				</form>
+			</div>
 			<section class="todos">
 				<section class="tarefas todo">
 					<h2>To do</h2>
-					<div class="todo-item">
-						<p>Fazer almoço</p>
-						<div class="todo-icons">
-							<!-- <button>
-								<img src="./assets/right-arrow.svg" alt="">
-							</button> -->
-							<input
-								type="image"
-								src="./assets/right-arrow.svg"
-							/>
-							<input type="image" src="./assets/delete.svg" />
-						</div>
-					</div>
-					<div class="todo-item">
-						<p>Fazer almoço</p>
-						<div class="todo-icons">
-							<input
-								type="image"
-								src="./assets/right-arrow.svg"
-							/>
-							<input type="image" src="./assets/delete.svg" />
-						</div>
-					</div>
+					<ul class="tarefas-todo" id="todo"></ul>
+					
 				</section>
 				<section class="tarefas doing">
 					<h2>Doing</h2>
-					<div class="todo-item">
+					<ul class="tarefas-doing" id="doing"></ul>
+					<!-- <div class="todo-item">
 						<p>Fazer almoço</p>
 						<div class="todo-icons">
 							<input type="image" src="./assets/check-mark.svg" />
 							<input type="image" src="./assets/delete.svg" />
 						</div>
-					</div>
+					</div> -->
 				</section>
 				<section class="tarefas done">
 					<h2>Done</h2>
-					<div class="todo-item">
+					<ul class="tarefas-done"  id="done"></ul>
+					<!-- <div class="todo-item">
 						<p>Fazer almoço</p>
 						<div class="todo-icons">
 							<input type="image" src="./assets/return.svg" />
 							<input type="image" src="./assets/delete.svg" />
 						</div>
-					</div>
+					</div> -->
 				</section>
 			</section>
 		</main>
@@ -107,6 +90,7 @@
 		</div>
 
 
-		<script src="script.js"></script>
+		<script src="modal.js"></script>
+		<script src="tarefas.js"></script>
 	</body>
 </html>

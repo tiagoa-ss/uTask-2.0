@@ -40,7 +40,7 @@ header h1 span {
 	font-weight: normal;
 }
 
-.input-area {
+.input-area form {
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
@@ -101,7 +101,7 @@ h2 {
 	margin: 10px auto;
 }
 
-.done p {
+.done li {
 	text-decoration: line-through;
 	color: rgba(0, 0, 0, 0.6);
 }
@@ -113,8 +113,8 @@ h2 {
 	margin-bottom: 15px;
 }
 
-.todo-icons > input {
-	margin-right: 8px;
+.todo-icons > button {
+	margin-right: 15px;
 }
 
 #modal-h2::after {
