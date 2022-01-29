@@ -43,7 +43,7 @@ header h1 span {
 .input-area form {
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 25px;
 	gap: 15px;
 }
 
@@ -73,7 +73,7 @@ header h1 span {
 	width: 100%;
 	justify-content: center;
 	gap: 35px;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .tarefas {

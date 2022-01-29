@@ -43,16 +43,15 @@ window.addEventListener('load', () => {
 
 		input.value = ''
 
-		botaoMoverDoing.addEventListener('click', e => {
+		botaoMoverDoing.addEventListener('click', () => {
 			listaTarefas.removeChild(liTarefa)
 			listaDoing.appendChild(liTarefa)
-
 
 			botoes.removeChild(botaoMoverDoing)
 			botoes.insertBefore(botaoMoverDone, botaoDelete)
 		})
 
-		botaoMoverDone.addEventListener('click', e => {
+		botaoMoverDone.addEventListener('click', () => {
 			listaDoing.removeChild(liTarefa)
 			listaDone.appendChild(liTarefa)
 
@@ -60,12 +59,17 @@ window.addEventListener('load', () => {
 			botoes.insertBefore(botaoMoverTodo, botaoDelete)
 		})
 
-		botaoMoverTodo.addEventListener('click', e => {
+		botaoMoverTodo.addEventListener('click', () => {
 			listaDone.removeChild(liTarefa)
 			listaTarefas.appendChild(liTarefa)
 
 			botoes.removeChild(botaoMoverTodo)
 			botoes.insertBefore(botaoMoverDoing, botaoDelete)
+		})
+
+		botaoDelete.addEventListener('click', e => {
+			const item = e.target.parentNode.parentNode.parentNode.parentNode
+			item.removeChild(liTarefa)
 		})
 	})
 })
