@@ -8,6 +8,24 @@ body {
 	font-family: Ubuntu;
 }
 
+body.dark {
+	background: #232323;
+}
+
+body.dark .tarefas {
+	background: #484E54;
+	color: #ececec;
+}
+
+body.dark .done li {
+	text-decoration: line-through;
+	color: #ececec;
+}
+
+input:focus {
+    outline: none;
+}
+
 button {
 	all: unset;
 	cursor: pointer;
@@ -252,9 +270,9 @@ input:checked + .slider:before {
 	padding: 10px;
 }
 
-.modal #change-back input:focus {
+/* .modal #change-back input:focus {
 	outline: none;
-}
+} */
 
 .modal #change-back #branco {
 	background: transparent;
